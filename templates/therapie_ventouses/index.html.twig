@@ -1,0 +1,52 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Dr. Chitour - Thérapie ventouses{% endblock %}
+
+{% block body %}
+<div class="container-fluid">
+{# <div class="header-custom hc"> #}
+<img src="{{ asset('images/imagecmdcheader.jpg')}}"class ="img-fluid mx-auto d-block">
+<img src="{{ asset('images/-16.jpg')}}"class ="imag-pag-traits img-fluid mx-auto d-block mt-5">
+<h2 class="titre-prin-pag">Qu'est-ce que la ventouse ?</h2>
+
+<ul id="list-therap" class="list-one">
+<h3 class="titre-tab-therap">Thérapies utilisées</h3>
+<a href="{{ path(('app_acupunture')) }}"><li>Acupunture</li></a>
+<a href="{{ path(('app_tuina')) }}"><li>Massage Tuina</li></a>
+<a href="{{ path(('app_coude_tennis')) }}"><li>Coude de Tennis</li></a>
+<a href="{{ path(('app_depresion')) }}"><li>Dépresion</li></a>
+<a href="{{ path(('app_douleur_chronique')) }}"><li>Douleur Chronique</li></a>
+<a href="{{ path(('app_epaule_gelee')) }}"><li>Epaule Gelée</li></a>
+<a href="{{ path(('app_mal_de_tete')) }}"><li>Mal de Tete</li></a>
+{# <a href="{{ path(('app_massage_preventif')) }}"><li>Massage preventif</li></a> #}
+<a href="{{ path(('app_therapie_ventouses')) }}"><li>Théraphie par ventouses</li></a>
+{# <a href="{{ path(('app_tuina'))}}"><li></li></a> #}
+{# <a href="{{ path(('app_acupunture_surpoids'))}}"><li>Acunpunture contre le surpoids</li></a> #}
+</ul>
+<section>
+<h3 class="titre-prin-traits">Qu'est-ce que la ventouse ?</h3>
+<p class="para-traits"> 
+La ventouse est une méthode dans laquelle une tasse en verre, en bambou ou en poterie est appliquée
+<img src="{{ asset('images/pexels-rdne-stock-project-8313436.jpg')}}" style="height:auto; width:200px;" Align="right">
+sur la surface de la peau. Cela se fait en chauffant brièvement la tête avec un matériau brûlant,
+de sorte qu'une force de vide est créée localement sur la peau. En conséquence, les muscles et
+la peau sont nourris (flux sanguin) et débarrassés des déchets, ce qui entraîne une relaxation totale.
+Les ventouses sont une alternative à un massage intensif . Il a un énorme effet de profondeur.
+Les ventouses sont particulièrement utiles pour les problèmes d'épaule / de cou (stress, tension), de migraine et de problèmes de dos.
+<br>
+La fonction de cette méthode est de dissiper le "Vent-Froid" et de soulager la stagnation sanguine et la douleur.
+Après un traitement par ventouses, une tache rouge peut être visible localement. C'est un phénomène normal, qui disparaîtra après quelques jours.
+Une fois la rougeur disparue, il y aura une amélioration des symptômes. La médecine chinoise considère la rougeur comme une stagnation sanguine locale.
+</p>
+</section>
+
+<section>
+{# <h3 class="titre-prin-traits">Thérapie d'acupuncture pour les plaintes de douleur"></h3> #}
+<b class="subtitle-traits">Affections traitées</b>
+<p class="para-traits">Conditions de douleur : Douleur musculo-squelettique (dos, cou, genou, épaule, coude, etc.), arthrite, migraines, maux de tête, blessures sportives, fibromyalgie, ATM, récupération post-opératoire, troubles du système nerveux.
+<br>
+Mental/émotionnel : Dépression, anxiété, insomnie, troubles du sommeil, stress.</p>
+</section>
+
+</div>
+{% endblock %}

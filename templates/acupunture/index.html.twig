@@ -1,0 +1,66 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Dr. Chitour - L'acupunture{% endblock %}
+
+{% block body %}
+<div class="container-fluid">
+{# <div class="header-custom hc"> #}
+<img src="{{ asset('images/imagecmdcheader.jpg')}}"class ="img-fluid mx-auto d-block">
+
+<img src="{{ asset('images/acupuncture photos.jpg')}}"class ="imag-pag-traits img-fluid mx-auto d-block mt-5">
+<h2 class="titre-prin-pag">Qu'est-ce que l'acupuncture ?</h2>
+
+<ul id="list-therap" class="list-one">
+<h3 class="titre-tab-therap">Thérapies utilisées</h3>
+<a href="{{ path(('app_acupunture')) }}"><li>Acupunture</li></a>
+<a href="{{ path(('app_tuina')) }}"><li>Massage Tuina</li></a>
+<a href="{{ path(('app_coude_tennis')) }}"><li>Coude de Tennis</li></a>
+<a href="{{ path(('app_depresion')) }}"><li>Dépresion</li></a>
+<a href="{{ path(('app_douleur_chronique')) }}"><li>Douleur Chronique</li></a>
+<a href="{{ path(('app_epaule_gelee')) }}"><li>Epaule Gelée</li></a>
+<a href="{{ path(('app_mal_de_tete')) }}"><li>Mal de Tete</li></a>
+{# <a href="{{ path(('app_massage_preventif')) }}"><li>Massage preventif</li></a> #}
+<a href="{{ path(('app_therapie_ventouses')) }}"><li>Théraphie par ventouses</li></a>
+{# <a href="{{ path(('app_tuina'))}}"><li></li></a> #}
+{# <a href="{{ path(('app_acupunture_surpoids'))}}"><li>Acunpunture contre le surpoids</li></a> #}
+</ul>
+<section>
+<h3 class="titre-prin-traits">Mécanisme d'action Acupuncture pour le soulagement de la douleur</h3>
+<p class="para-traits"> Le traitement est une combinaison de techniques de manipulation physique – 
+massage thérapeutique chinois et acupression – et de manipulation des points d'acupuncture .
+Le massage Tuina agit en profondeur dans les tissus musculaires, les os et les tendons,
+ mais aussi dans le système nerveux. Il augmente votre résilience et votre résistance, vous donne de la souplesse et fait disparaître les tensions et la fatigue.
+<img src="{{ asset('images/pexels-rdne-stock-project-8313436.jpg')}}" style="height:auto; width:200px;" Align="right">
+L'énergie circule dans le corps par les méridiens, c'est-à-dire les canaux énergétiques qui parcourent le corps.
+Ces méridiens portent le nom de l'organe avec lequel ils sont en contact. Par exemple le méridien du foie, le méridien du cœur etc…
+Ensemble, ils forment un réseau complexe dans lequel l'énergie est transmise à toutes les parties du corps.
+Les points d'acupuncture sont situés sur ces méridiens. Un point d'acupuncture est un point avec lequel
+l' acupuncteur peut influencer le flux d'énergie dans le méridien avec une aiguille . En plantant une aiguille dans le méridien, l'énergie est mise en mouvement et peut, si nécessaire, se renforcer ou ralentir pour ramener le corps dans un équilibre énergétique.
+
+L'acupuncture est basée sur le concept d'énergie (Qi). L'énergie qui dans la nature assure, entre autres, la croissance des plantes, le climat, les saisons, le rythme du jour et de la nuit.
+Chez l'homme, il s'occupe de tous les processus qui font de lui un être vivant : la capacité de voir, d'entendre, de penser, de sentir, le métabolisme des aliments, la respiration, les battements du cœur, le sommeil et le rêve, la capacité d'exprimer des émotions et les talents en développement, bref, tout.
+Dans une situation saine, toutes ces formes d'énergie chez l'homme et son environnement sont en équilibre les unes avec les autres.
+La maladie est une perturbation de l'équilibre naturel. Dans les cas où le corps est incapable de rétablir cet équilibre, un traitement d'acupuncture peut offrir une solution.
+L'acupuncture peut soulager les symptômes. C'est aussi une méthode de prévention des maladies et agit donc de manière préventive.
+
+Stimulation des nerfs dans les muscles et autres tissus, entraînant la libération d'endorphines
+et d'autres neurotransmetteurs tels que la sérotonine, et des changements dans la partie du cerveau
+qui traite la douleur. 
+Soulagement de la douleur grâce aux mécanismes des récepteurs alpha-adrénergiques (Koo 2008).
+Augmenter la libération d'adénosine, qui a des propriétés analgésiques (Goldman 2010). 
+Régulation du système limbique (Hui 2009)
+Réduire l'inflammation par la libération de substances immunorégulatrices (Kavoussi 2007, Zijlstra 2003).
+Améliorer la rigidité et la mobilité en améliorant la microcirculation locale (Komori 2009),
+ce qui aide à résoudre l'enflure .</p>
+</p>
+</section>
+{# <section>
+<h3 class="titre-prin-traits>Thérapie d'acupuncture pour les plaintes de douleur"</h3>
+<b class="subtitle-traits">Types de douleur</b>
+<p class="para-traits"> Les plaintes de douleur sont de toutes formes et tailles. La douleur peut être lancinante et aiguë, mais aussi lancinante et sourde. La douleur peut être légère à un moment et spontanément très présente le suivant. La douleur peut se manifester à un endroit, mais elle peut aussi sauter. Selon la médecine chinoise, la douleur est liée à l'incapacité de l'énergie, du sang et des fluides à circuler librement dans les méridiens. Ainsi, lorsque le flux est bloqué par une tension, une blessure ou un autre traumatisme, la douleur s'ensuit. </p>
+<b class="subtitle-traits"> Douleur et émotion </b>
+<p class="para-traits"> La tension mentale et l'agitation peuvent également causer de la douleur car cela conduit finalement à des tensions et à des blocages dans le corps. À mon avis, le déséquilibre mental est une cause majeure de nombreuses plaintes de douleur chronique inexplicables. </p>
+</section> #}
+
+</div>
+{% endblock %}

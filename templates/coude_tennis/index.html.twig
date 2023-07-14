@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello CoudeTennisController!{% endblock %}
+
+{% block body %}
+<div class="container-fluid">
+<img src="{{ asset('images/imagecmdcheader.jpg')}}"class ="img-fluid mx-auto d-block">
+<img src="{{ asset('images/tennis.jpeg')}}"class ="imag-pag-traits img-fluid mx-auto d-block mt-5">
+<h2 class="titre-prin-pag">Coude Tennis</h2>
+
+<ul id="list-therap" class="list-one">
+<h3 class="titre-tab-therap">Thérapies utilisées</h3>
+<a href="{{ path(('app_acupunture')) }}"><li>Acupunture</li></a>
+<a href="{{ path(('app_tuina')) }}"><li>Massage Tuina</li></a>
+<a href="{{ path(('app_coude_tennis')) }}"><li>Coude de Tennis</li></a>
+<a href="{{ path(('app_depresion')) }}"><li>Dépresion</li></a>
+<a href="{{ path(('app_douleur_chronique')) }}"><li>Douleur Chronique</li></a>
+<a href="{{ path(('app_epaule_gelee')) }}"><li>Epaule Gelée</li></a>
+<a href="{{ path(('app_mal_de_tete')) }}"><li>Mal de Tete</li></a>
+{# <a href="{{ path(('app_massage_preventif')) }}"><li>Massage preventif</li></a> #}
+<a href="{{ path(('app_therapie_ventouses')) }}"><li>Théraphie par ventouses</li></a>
+{# <a href="{{ path(('app_tuina'))}}"><li></li></a> #}
+{# <a href="{{ path(('app_acupunture_surpoids'))}}"><li>Acunpunture contre le surpoids</li></a> #}
+</ul>
+<section>
+<p class="para-traits"> La thérapie d'acupuncture a un bon effet sur le traitement du coude de tennis.
+Le coude de tennis est une inflammation aseptique causée par un frottement constant entre le tendon et
+<img src="{{ asset('images/coude-tennis.jpeg')}}" style="height:auto; width:200px;" Align="right">
+le périoste. L'acupuncture soulage les muscles tendus par la stimulation et régule le Qi local et la circulation sanguine, afin d'obtenir un meilleur effet de traitement.<br>
+<b class="subtitle-traits"><strong>Signes cliniques : </strong><br></b>
+Les principaux signes sont une douleur de l'épicondyle huméral,
+une faiblesse lors de la tenue d'objets, une douleur en serrant le poing ou en tordant une serviette,
+et la douleur peut irradier vers l'avant-bras et l'épaule. Lorsque le coude est fléchi, un point douloureux
+se développe, près de l'épicondyle latéral de l'humérus, il n'y a généralement pas de gonflement local
+et un mouvement limité du coude. Le test de flexion et de rotation du poignet est généralement positif.<br>
+<b class="subtitle-traits"><strong>Traitement :</strong><br> </b>
+Au moyen de l'acupuncture ou de l'électro-acupuncture, les patients sont traités 1 à 2 fois par semaine,
+6 à 8 fois en bloc de traitement.
+</p>
+<p class="para-traits">
+</section>
+
+
+</div>
+{% endblock %}

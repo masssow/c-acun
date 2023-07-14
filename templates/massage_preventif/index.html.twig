@@ -1,0 +1,56 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello MassagePreventifController!{% endblock %}
+
+{% block body %}
+<div class="container-fluid">
+{# <div class="header-custom hc"> #}
+<img src="{{ asset('images/imagecmdcheader.jpg')}}"class ="img-fluid mx-auto d-block">
+<img src="{{ asset('images/massagep.jpg')}}"class ="imag-pag-traits img-fluid mx-auto d-block mt-5">
+<h2 class="titre-prin-pag">Massage preventif</h2>
+
+<ul id="list-therap" class="list-one">
+<h3 class="titre-tab-therap">Thérapies utilisées</h3>
+<a href="{{ path(('app_acupunture')) }}"><li>Acupunture</li></a>
+<a href="{{ path(('app_tuina')) }}"><li>Massage Tuina</li></a>
+<a href="{{ path(('app_coude_tennis')) }}"><li>Coude de Tennis</li></a>
+<a href="{{ path(('app_depresion')) }}"><li>Dépresion</li></a>
+<a href="{{ path(('app_douleur_chronique')) }}"><li>Douleur Chronique</li></a>
+<a href="{{ path(('app_epaule_gelee')) }}"><li>Epaule Gelée</li></a>
+<a href="{{ path(('app_mal_de_tete')) }}"><li>Mal de Tete</li></a>
+{# <a href="{{ path(('app_massage_preventif')) }}"><li>Massage preventif</li></a> #}
+<a href="{{ path(('app_therapie_ventouses')) }}"><li>Théraphie par ventouses</li></a>
+{# <a href="{{ path(('app_tuina'))}}"><li></li></a> #}
+{# <a href="{{ path(('app_acupunture_surpoids'))}}"><li>Acunpunture contre le surpoids</li></a> #}
+</ul>
+<section>
+<h3 class="titre-prin-traits">Massage préventif : Restez vital et vieillissez en bonne santé</h3>
+<p class="para-traits"> Le massage préventif a une histoire de plus de 2000 ans en Chine. 
+Cette forme de massage gagne non seulement en Asie, mais partout dans le monde, en plus 
+de ses effets miraculeux sur le système nerveux et le système immunitaire, la promotion de la circulation,
+la relaxation des tendons, l'effet anti-inflammatoire et analgésique sont également reconnus. 
+Au fil des années, chacun doit faire face à une diminution des fonctions organiques pertinentes.
+<img src="{{ asset('images/pexels-anete-lusina-5240637.jpg')}}" style="height:auto; width:200px; padding:5px" HSPACE="5" Align="right">
+<br>
+Surtout ceux qui bougent très peu, la circulation sanguine est plutôt lente. Cela peut entraîner une
+thrombose ou une artériosclérose, qui à son tour peut entraîner des troubles cardiovasculaires
+ou cérébrovasculaires. Cette forme de massage préventif est particulièrement adaptée à ce type de personnes,
+qui bougent en fait trop peu, pour favoriser la circulation sanguine dans tout le corps et prévenir
+le vieillissement. Le relâchement des muscles et la détente des nerfs ont également un effet bénéfique
+sur les personnes qui souffrent de stress ou qui sont constamment sous pression. Partout dans le monde,
+de nombreuses personnes ont expérimenté les bienfaits du massage préventif prolongé et il n'y
+a personne qui n'en ait pas bénéficié.
+
+</p>
+
+</section>
+{# <section>
+<h3 class="titre-prin-traits>Thérapie d'acupuncture pour les plaintes de douleur"</h3>
+<b class="subtitle-traits">Types de douleur</b>
+<p class="para-traits"> Les plaintes de douleur sont de toutes formes et tailles. La douleur peut être lancinante et aiguë, mais aussi lancinante et sourde. La douleur peut être légère à un moment et spontanément très présente le suivant. La douleur peut se manifester à un endroit, mais elle peut aussi sauter. Selon la médecine chinoise, la douleur est liée à l'incapacité de l'énergie, du sang et des fluides à circuler librement dans les méridiens. Ainsi, lorsque le flux est bloqué par une tension, une blessure ou un autre traumatisme, la douleur s'ensuit. </p>
+<b class="subtitle-traits"> Douleur et émotion </b>
+<p class="para-traits"> La tension mentale et l'agitation peuvent également causer de la douleur car cela conduit finalement à des tensions et à des blocages dans le corps. À mon avis, le déséquilibre mental est une cause majeure de nombreuses plaintes de douleur chronique inexplicables. </p>
+</section> #}
+
+</div>
+{% endblock %}

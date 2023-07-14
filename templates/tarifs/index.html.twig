@@ -1,0 +1,121 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello TarifsController!{% endblock %}
+
+{% block body %}
+<div class="container-fluid">
+{# <div class="header-custom hc"> #}
+<img src="{{ asset('images/40861-6-pain-in-the-neck-download-hq-png.png')}}"class ="imag-pag-traits img-fluid mx-auto d-block">
+<h2 class="titre-prin-pag">Coûts & frais</h2>
+
+{# <ul id="list-therap" class="list-one">
+<h3 class="titre-tab-therap">Thérapies utilisées</h3>
+<a href="{{ path(('app_acupunture')) }}"><li>Acupunture</li></a>
+<a href="{{ path(('app_arreter_fumer')) }}"><li>Arreter de fumer</li></a>
+<a href="{{ path(('app_coude_tennis')) }}"><li>Coude de Tennis</li></a>
+<a href="{{ path(('app_depresion')) }}"><li>Dépresion</li></a>
+<a href="{{ path(('app_douleur_chronique')) }}"><li>Douleur Chronique</li></a>
+<a href="{{ path(('app_epaule_gelee')) }}"><li>Epaule Gelée</li></a>
+<a href="{{ path(('app_mal_de_tete')) }}"><li>Mal de Tete</li></a>
+{# <a href="{{ path(('app_massage_preventif')) }}"><li>Massage preventif</li></a> 
+<a href="{{ path(('app_therapie_ventouses')) }}"><li>Théraphie par ventouses</li></a>
+{# <a href="{{ path(('app_tuina'))}}"><li></li></a> 
+{# <a href="{{ path(('app_acupunture_surpoids'))}}"><li>Acunpunture contre le surpoids</li></a> 
+</ul> #}
+<section>
+{# <h3 class="titre-prin-traits">Mécanisme d'action Acupuncture pour le soulagement de la douleur</h3> #}
+<p class="para-traits">4 types de traitements sont dispensés dans notre Centre de Développement Médical Chinois, à savoir : <br>
+<b>Acupuncture Chinoises</b><br>
+<b>Thérapie Tuina</b><br>
+<b>AuriculoThérapie</b><br>
+<b>Massage preventif</b><br>
+</p>
+</section>
+<section>
+    <table class="table table-success table-striped">
+        <thead>
+            <tr>
+            {# <th scope="col">#</th> #}
+            <th scope="col">Thérapies</th>
+            <th scope="col">Prémier consultation</th>
+            <th scope="col">Consultation de suivi</th>
+            <th scope="col">Uniquement consultation</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <th scope="row">Acupunture</th>
+            <td>75 €</td>
+            <td>65 €</td>
+            <td>20 €</td>
+            </tr>
+             <tr>
+            <th scope="row">Théraphie Tuina</th>
+            <td>75 €</td>
+            <td>65 €</td>
+            <td></td>
+            </tr>
+            <tr>
+            <th scope="row">Acupunture + Tuina</th>
+            <td>140 €</td>
+            <td>100</td>
+            <td></td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+<section class="asq mb-5">
+<h2 class="titre-prin-pag">Questions frequentes</h2>
+
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            A quoi ressemble un traitements d'Acupunture ?
+        </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">* Les acupuncteurs utilisent diverses techniques, mais la plus courante est le perçage avec de fines aiguilles stériles.
+            Il y a aussi l'acupuncture au laser. Parfois, la chaleur est utilisée lors de la piqûre, générée par une herbe fumante (moxa) ou par une lampe spéciale.<br>
+            * Le thérapeute pose le diagnostic, entre autres, en sentant votre pouls, en regardant votre langue et en tapotant (palpant) votre peau. Parce que le thérapeute vise à rééquilibrer votre état de santé global, il ou elle vous traitera souvent avec des méthodes et des conseils différents.
+            Selon le diagnostic, le thérapeute combine le traitement d'acupuncture avec d'autres méthodes de guérison, telles que les herbes, les ventouses ou le moxa.</div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Que peut faire l'acupunture pour moi ?
+        </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body"> L'acupuncture est utilisée efficacement pour de nombreuses plaintes. Les plaintes à long terme, pour lesquelles la médecine traditionnelle occidentale ne trouve pas de solution, peuvent souvent être corrigées ou réduites à l'aide de l'acupuncture. <br>
+            <br>
+            Quelques exemples : perte de poids, fatigue (chronique), douleurs chroniques, dépression, burnout, grippe et rhume, surmenage, RSI, maux de tête et migraine, maux de dos, douleurs articulaires, douleurs musculaires, fibromyalgie, insomnie, infécondité non désirée, troubles alimentaires, sports blessures, plaintes sévères de la ménopause, plaintes intestinales, comme soutien pour le cancer. L'acupuncture est également possible pour les enfants qui se plaignent.</div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Que peut faire Tuina pour moi ?
+        </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body"> L'acupuncture est utilisée efficacement pour de nombreuses plaintes. Les plaintes à long terme, pour lesquelles la médecine traditionnelle occidentale ne trouve pas de solution, peuvent souvent être corrigées ou réduites à l'aide de l'acupuncture. <br>
+            <br>
+            Tuina aide à se détendre, mais peut également soulager diverses affections physiques et émotionnelles, telles que la migraine, les douleurs chroniques, les tensions musculaires, la fibromyalgie, les douleurs musculaires et nerveuses, les problèmes de dos et de cou, la mauvaise circulation sanguine, les problèmes digestifs, le stress et les problèmes articulaires. comme les rhumatismes et l'arthrose.<br>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            Puisse-je me faire rembourser les consultations ?
+        </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">De nombreux assureurs, mais certainement pas tous, remboursent la médecine chinoise.</div>
+        </div>
+        </div>
+    </div>
+</section>
+</div>
+{% endblock %}

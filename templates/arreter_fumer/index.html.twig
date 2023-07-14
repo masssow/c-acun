@@ -1,0 +1,57 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ArreterFumerController!{% endblock %}
+
+{% block body %}
+<div class="container-fluid">
+{# <div class="header-custom hc"> #}
+<img src="{{ asset('images/imagecmdcheader.jpg')}}"class ="img-fluid mx-auto d-block">
+
+<img src="{{ asset('images/cigarette-7788812_1280.jpg')}}"class ="imag-pag-traits img-fluid mx-auto d-block mt-5">
+<h2 class="titre-prin-pag">Qu'est ce que l'Acupunture ?</h2>
+
+<ul id="list-therap" class="list-one">
+<h3 class="titre-tab-therap">Thérapies utilisées</h3>
+<a href="{{ path(('app_acupunture')) }}"><li>Acupunture</li></a>
+<a href="{{ path(('app_tuina')) }}"><li>Massage Tuina</li></a>
+<a href="{{ path(('app_coude_tennis')) }}"><li>Coude de Tennis</li></a>
+<a href="{{ path(('app_depresion')) }}"><li>Dépresion</li></a>
+<a href="{{ path(('app_douleur_chronique')) }}"><li>Douleur Chronique</li></a>
+<a href="{{ path(('app_epaule_gelee')) }}"><li>Epaule Gelée</li></a>
+<a href="{{ path(('app_mal_de_tete')) }}"><li>Mal de Tete</li></a>
+{# <a href="{{ path(('app_massage_preventif')) }}"><li>Massage preventif</li></a> #}
+<a href="{{ path(('app_therapie_ventouses')) }}"><li>Théraphie par ventouses</li></a>
+{# <a href="{{ path(('app_tuina'))}}"><li></li></a> #}
+{# <a href="{{ path(('app_acupunture_surpoids'))}}"><li>Acunpunture contre le surpoids</li></a> #}
+</ul>
+<section>
+<h3 class="titre-prin-traits">Arrêter de fumer grâce à l'acupuncture</h3>
+<p class="para-traits">Fumer est une habitude aux conséquences très néfastes pour la santé. Des preuves scientifiques montrent qu'en plus des substances toxiques bien connues que sont la nicotine, le goudron et le monoxyde de carbone, de nombreuses autres substances toxiques sont libérées. Qui sont directement liés au développement, par exemple :<br>
+des maladies cardiovasculaires, de l'hypertension , de la trachite chronique,
+de l'emphysème pulmonaire. De plus, ces substances accélèrent le développement
+de nombreuses tumeurs malignes. La recherche a montré que le rapport entre le nombre
+de décès par cancer du poumon et le tabagisme est d'environ 80 %. Dans de nombreux pays du monde,
+toutes sortes de mesures sont prises pour limiter le tabagisme dans les lieux publics.
+Prenons, par exemple, l'interdiction de fumer récemment imposée dans le secteur de la restauration. <br>
+A propos d'arrêter de fumer grâce à l'acupuncture , nous ne trouvons aucune trace dans les anciens classiques
+de l'acupuncture . Cela est principalement dû au fait qu'il s'agit d'un développement de
+l'acupuncture moderne, qui a également un objectif préventif. Cette méthode est née dans les années 1950,
+mais ce n'est que dans les années 1970 qu'elle s'est généralisée dans plusieurs pays dont le Japon,
+les États-Unis, la France et l'ex-URSS. Parce que cette méthode est à la fois simple et bon marché et
+offre également un résultat rapide sans effets secondaires, de plus en plus de médecins à travers le
+monde ont suivi cette méthode de près ou l'ont appliquée eux-mêmes. Les stimuli appliqués aux points
+d'acupuncture proviennent principalement de l'acupuncture traditionnelle, de l'acupuncture auriculaire
+et de l'électro-acupuncture.
+</p>
+</p>
+</section>
+<section>
+<h3 class="titre-prin-traits>Thérapie d'acupuncture pour les plaintes de douleur"</h3>
+<b class="subtitle-traits">Types de douleur</b>
+<p class="para-traits"> Les plaintes de douleur sont de toutes formes et tailles. La douleur peut être lancinante et aiguë, mais aussi lancinante et sourde. La douleur peut être légère à un moment et spontanément très présente le suivant. La douleur peut se manifester à un endroit, mais elle peut aussi sauter. Selon la médecine chinoise, la douleur est liée à l'incapacité de l'énergie, du sang et des fluides à circuler librement dans les méridiens. Ainsi, lorsque le flux est bloqué par une tension, une blessure ou un autre traumatisme, la douleur s'ensuit. </p>
+<b class="subtitle-traits"> Douleur et émotion </b>
+<p class="para-traits"> La tension mentale et l'agitation peuvent également causer de la douleur car cela conduit finalement à des tensions et à des blocages dans le corps. À mon avis, le déséquilibre mental est une cause majeure de nombreuses plaintes de douleur chronique inexplicables. </p>
+</section>
+
+</div>
+{% endblock %}

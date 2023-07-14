@@ -1,0 +1,352 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+    <!-- Main Header -->
+        <header>
+            <div class="carousel-default owl-carousel carousel-main carousel-nav-white background-dark text-center">
+            <div class="item">
+                <div class="s-12">
+                {# <img src="{{ asset('images/pexels-alex-andrews-1983032.jpg')}}" alt=""> #}
+                <div class="carousel-content">
+                    <div class="content-center-vertical line">
+                    <div class="margin-top-bottom-80">
+                        <!-- Title -->
+                        <h1 class="text-white margin-bottom-30 text-size-60 text-m-size-30 text-line-height-1">Medecine energies Chinoises</h1>
+                        <div class="s-12 m-10 l-8 center"><p class="text-white text-size-14 margin-bottom-40">Traitements eficaces contre nombreux problemes physiques et psychique </p></div>
+                        <div class="line">
+                        <div class="s-12 m-12 l-3 center">
+                            <a class="button button-white-stroke s-12" href="/">Visiter</a>
+                        </div>       
+                        </div>  
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>              
+            </div>               
+        </header>
+        <!-- about section -->
+    <div class="container-fluid">
+        <section class="about_section layout_padding">
+            {# <div class="container  "> #}
+                <div class="row">
+                    <div class="col-md-6 ">
+                            <img src="{{ asset('images/pe-pavel-danilyuk.jpg')}}" class="img-box d-block mx-auto" alt="Presentation Dr. Chitour">
+                        </div>
+                    <div class="col-md-6">
+                            <h1 class="detail-box titr-skill text-center mt-5">Qui je-suis</h1>
+                            <p>
+                                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+                                in some form, by injected humour, or randomised words which don't look even slightly believable. If you
+                                are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in
+                                the middle of text. All
+                            </p>
+                            <a href="{{path('app_apropos')}}">
+                                Savoir +
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </div>
+    <!-- end about section -->
+
+    <!-- sale section -->
+
+     <!-- Section 4 -->
+        <section class="section-top-padding full-width container-fluid">
+            <h2 class="text-size-50  text-m-size-40 text-center">Thérapies & Symptômes</h2>
+            <hr class="break-small background-primary break-center"> 
+            <div class="tabs background-primary-hightlight">
+                <div class="tab-item tab-active">
+                <a class="tab-label active-btn">Symptômes</a>
+                <div class="tab-content lightbox-gallery row">
+                    <div class="s-12 m-6 l-3 col-lg-3">
+                    <a class="image-with-hover-overlay image-hover-zoom" href="{{ path('app_douleur_chronique')}}">
+                        <div class="image-hover-overlay background-primary"> 
+                        <div class="image-hover-overlay-content text-center padding-2x">
+                            <h2 class="text-thin">Douleur chronique</h2> 
+                            <p>L’acupuncture peut aider à gérer la douleur chronique en</p> 
+                        </div> 
+                        </div> 
+                        <img src="{{ asset('images/douleur_chronique_reduit.png')}}" alt="" title="Portfolio Image 1" />
+                    </a>	
+                    </div>
+                    <div class="s-12 m-6 l-3 col-lg-3">
+                    <a class="image-with-hover-overlay image-hover-zoom" href="{{ path('app_coude_tennis')}}">
+                        <div class="image-hover-overlay background-primary"> 
+                        <div class="image-hover-overlay-content text-center padding-2x">
+                            <h2 class="text-thin">Coude de tennis</h2> 
+                            <p>Le coude de tennis est une inflammation aseptique causée par un frottement constant entre le tendon.
+                            </p> 
+                        </div> 
+                        </div> 
+                        <img src="{{ asset('images/coude_ten_redui.jpg')}}" alt="" title="Portfolio Image 2" />
+                    </a>	
+                    </div>
+                    <div class="s-12 m-6 l-3 col-lg-3">
+                    <a class="image-with-hover-overlay image-hover-zoom" href="{{ path('app_insomnie')}}">
+                        <div class="image-hover-overlay background-primary"> 
+                        <div class="image-hover-overlay-content text-center padding-2x">
+                            <h2 class="text-thin">Troubles de sommeil</h2> 
+                            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. Autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p> 
+                        </div> 
+                        </div> 
+                        <img src="{{ asset('images/sommeil_reduit.jpg')}}" alt="" title="Portfolio Image 3" />
+                    </a>	
+                    </div>
+                    <div class="s-12 m-6 l-3 col-lg-3">
+                    <a class="image-with-hover-overlay image-hover-zoom" href="{{ path('app_acupunture')}}">
+                        <div class="image-hover-overlay background-primary"> 
+                        <div class="image-hover-overlay-content text-center padding-2x">
+                            <h2 class="text-thin">Acupunture Vs Stress</h2> 
+                            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. Autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p> 
+                        </div> 
+                        </div> 
+                        <img src="{{ asset('images/point_acu_reduit.jpg')}}" alt="" title="Portfolio Image 4" />
+                    </a>	
+                    </div>
+                    <div class="s-12 m-6 l-3 col-lg-3">
+                    <a class="image-with-hover-overlay image-hover-zoom" href="{{ path('app_epaule_gelee')}}">
+                        <div class="image-hover-overlay background-primary"> 
+                        <div class="image-hover-overlay-content text-center padding-2x">
+                            <h2 class="text-thin">Epaule Gelée</h2> 
+                            <p>Le tennis elbow est une tendinite de la face externe du coude,
+                                    terme principalement utilisé comme « douleur du coude du joueur de tennis</p> 
+                        </div> 
+                        </div> 
+                        <img src="{{ asset('images/epaule_gel_reduit.jpg')}}" alt="" title="Portfolio Image 5"/>
+                    </a>	
+                    </div>
+                    <div class="s-12 m-6 l-3 col-lg-3">
+                    <a class="image-with-hover-overlay image-hover-zoom" href="{{ path('app_mal_de_tete')}}">
+                        <div class="image-hover-overlay background-primary"> 
+                        <div class="image-hover-overlay-content text-center padding-2x">
+                            <h2 class="text-thin">Maux de Tête</h2> 
+                            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. Autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p> 
+                        </div> 
+                        </div> 
+                        <img src="{{ asset('images/mal_tete_reduit.png')}}" alt="" title="Portfolio Image 6" />
+                    </a>	
+                    </div>
+                    <div class="s-12 m-6 l-3 col-lg-3">
+                    <a class="image-with-hover-overlay image-hover-zoom" href="">
+                        <div class="image-hover-overlay background-primary"> 
+                        <div class="image-hover-overlay-content text-center padding-2x">
+                            <h2 class="text-thin">Lorem Ipsum Dolor</h2> 
+                            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. Autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p> 
+                        </div> 
+                        </div> 
+                        <img src="{{ asset('images/douleur_chronique_reduit.png')}}" alt="" title="Portfolio Image 7" />
+                    </a>	
+                    </div>
+                    <div class="s-12 m-6 l-3 col-lg-3">
+                    <a class="image-with-hover-overlay image-hover-zoom" href="img/portfolio/portfolio-07.jpg">
+                        <div class="image-hover-overlay background-primary"> 
+                        <div class="image-hover-overlay-content text-center padding-2x">
+                            <h2 class="text-thin">Lorem Ipsum Dolor</h2> 
+                            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. Autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p> 
+                        </div> 
+                        </div> 
+                        <img src="{{ asset('images/douleur chroniu.jpg')}}" alt="" title="Portfolio Image 8" />
+                    </a>	
+                    </div>
+                </div>  
+                </div>
+                <div class="tab-item">
+                <a class="tab-label">Thérapies</a>
+                <div class="tab-content lightbox-gallery row">
+                    <div class="s-12 m-6 l-3 col-lg-3">
+                    <a class="image-with-hover-overlay image-hover-zoom" href="{{ path(('app_therapie_ventouses')) }}">
+                        <div class="image-hover-overlay background-primary"> 
+                        <div class="image-hover-overlay-content text-center padding-2x">
+                            <h2 class="text-thin">Théraphie par ventouses</h2> 
+                            <p>La ventouse est une méthode dans laquelle une tasse en verre,
+                            en bambou ou en poterie est appliquée sur la surface de la peau. Cela se fait
+                            en chauffant brièvement la tête avec un matériau brûlant, de sorte qu'une force
+                            de vide est créée localement sur la peau.
+                            </p> 
+                        </div> 
+                        </div> 
+                        <img src="{{ asset('images/ventouses_reduit.jpg')}}" alt="Thérapie par ventouses chinoises" title="Portfolio Image 1" />
+                    </a>	
+                    </div>
+                    <div class="s-12 m-6 l-3 col-lg-3">
+                    <a class="image-with-hover-overlay image-hover-zoom" href="{{ path(('app_tuina')) }}">
+                        <div class="image-hover-overlay background-primary"> 
+                        <div class="image-hover-overlay-content text-center padding-2x">
+                            <h2 class="text-thin">Massage Tuina</h2> 
+                            <p>Le traitement est une combinaison de techniques de manipulation physique, 
+                                massage thérapeutique chinois, et acupression et de manipulation
+                                des points d'acupuncture.
+                            </p> 
+                        </div> 
+                        </div> 
+                        <img src="{{ asset('images/acuprexion_reduit.jpg')}}" alt="Massage Tuina" title="Portfolio Image 2" />
+                    </a>	
+                    </div>
+                    <div class="s-12 m-6 l-3 col-lg-3">
+                    <a class="image-with-hover-overlay image-hover-zoom" href="{{ path(('app_acupunture')) }}">
+                        <div class="image-hover-overlay background-primary"> 
+                        <div class="image-hover-overlay-content text-center padding-2x">
+                            <h2 class="text-thin">L'acupunture</h2> 
+                            <p>La maladie est une perturbation de l'équilibre naturel. Dans les cas où le corps est incapable
+                            de rétablir cet équilibre, un traitement d'acupuncture peut offrir une solution. L'acupuncture peut soulager les symptômes.
+                            </p> 
+                        </div> 
+                        </div> 
+                        <img src="{{ asset('images/point_acu_reduit.jpg')}}" alt="" title="Portfolio Image 3" />
+                    </a>	
+                    </div>
+                    <div class="s-12 m-6 l-3 col-lg-3">
+                    <a class="image-with-hover-overlay image-hover-zoom" href="{{ path(('app_massage_preventif')) }}">
+                        <div class="image-hover-overlay background-primary"> 
+                        <div class="image-hover-overlay-content text-center padding-2x">
+                            <h2 class="text-thin">Massage preventif</h2> 
+                            <p>Surtout ceux qui bougent très peu, la circulation sanguine est plutôt lente. Cela peut entraîner une
+thrombose ou une artério    sclérose, qui à son tour peut entraîner des troubles cardiovasculaires
+ou cérébrovasculaires. C    ette forme de massage préventif est particulièrement adaptée à ce type de personnes 
+                            </p> 
+                        </div> 
+                        </div> 
+                        <img src="{{ asset('images/masagep_reduit.jpg')}}" alt="" title="Portfolio Image 4" />
+                    </a>	
+                    </div>
+                    <div class="s-12 m-6 l-3 col-lg-3">
+                    <a class="image-with-hover-overlay image-hover-zoom" href="img/portfolio/video.mp4">
+                        <div class="image-hover-overlay background-primary"> 
+                        <div class="image-hover-overlay-content text-center padding-2x">
+                            <h2 class="text-thin">Auriculothérapie</h2> 
+                            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. Autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p> 
+                        </div> 
+                        </div> 
+                        <img src="{{ asset('images/auriculo_reduit.jpg')}}" alt="" title="Portfolio Image 5" />
+                    </a>	
+                    </div>
+                    <div class="s-12 m-6 l-3 col-lg-3">
+                    <a class="image-with-hover-overlay image-hover-zoom" href="img/portfolio/portfolio-14.jpg">
+                        <div class="image-hover-overlay background-primary"> 
+                        <div class="image-hover-overlay-content text-center padding-2x">
+                            <h2 class="text-thin">Moxibustion</h2> 
+                            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. Autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p> 
+                        </div> 
+                        </div> 
+                        <img src="{{ asset('images/douleur chroniu.jpg')}}" alt="" title="Portfolio Image 6" />
+                    </a>	
+                    </div>
+                    <div class="s-12 m-6 l-3 col-lg-3">
+                    <a class="image-with-hover-overlay image-hover-zoom" href="img/portfolio/portfolio-07.jpg">
+                        <div class="image-hover-overlay background-primary"> 
+                        <div class="image-hover-overlay-content text-center padding-2x">
+                            <h2 class="text-thin">Lorem Ipsum Dolor</h2> 
+                            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. Autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p> 
+                        </div> 
+                        </div> 
+                        <img src="{{ asset('images/douleur chroniu.jpg')}}" alt="" title="Portfolio Image 7" />
+                    </a>	
+                    </div>
+                    <div class="s-12 m-6 l-3 col-lg-3">
+                    <a class="image-with-hover-overlay image-hover-zoom" href="img/portfolio/video.mp4">
+                        <div class="image-hover-overlay background-primary"> 
+                        <div class="image-hover-overlay-content text-center padding-2x">
+                            <h2 class="text-thin">Lorem Ipsum Dolor</h2> 
+                            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. Autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p> 
+                        </div> 
+                        </div> 
+                        <img src="{{ asset('images/douleur chroniu.jpg')}}" alt="" title="Portfolio Image 8" />
+                    </a>	
+                    </div>
+                </div>  
+                </div>
+                </div>  
+            </div>
+            </div>
+        </section> 
+            <section class="section background-white" >  
+            <div class="line">
+            <h2 class="text-size-50  text-m-size-40 text-center">J'aide à garder votre corps en bonne santé</h2>
+            <p class="para-traits mb-3 text-center">Notre objectif est de traiter les patients en utilisant d'anciennes
+        techniques traditionnelles d'acupuncture, de massage Tuina et d'herbes chinoises préparées
+        à partir d'ingrédients naturels.
+        </p> 
+            <hr class="break-small background-primary break-center">
+            <div class="margin margin-top-bottom-50 container-fluid">
+            <div class="row">
+                <div class="s-12 m-12 l-3 col-lg-3">
+                <div class="block">
+                    <div class="count-to text-center">
+                    <span class="timer h1 text-size-50  text-m-size-40">100%</span>
+                        <h2 class="titr-skill">Acupuncture</h2>
+                    <p class="h1 text-size-20 margin-top-10 text-dark text-thin">Avec l'aide de l'acupuncture, nous équilibrons votre énergie,
+                        améliorons la circulation sanguine, afin que votre corps puisse se réparer.</p> 
+                    </div>
+                </div>
+                </div>
+                <div class="s-12 m-12 l-3 col-lg-3">
+                <div class="block">
+                    <div class="count-to text-center">
+                    <span class="timer h1 text-size-50  text-m-size-40">100%</span>
+                                    <h2 class="titr-skill">Massage Thuina</h2>
+                    <p class="h1 text-size-20 margin-top-10 text-dark text-thin">Détend les muscles et éloigne la douleur.</p> 
+                    </div>
+                </div>
+                </div>
+                <div class="s-12 m-12 l-3 col-lg-3">
+                <div class="block">
+                    <div class="count-to text-center">
+                    <span class="timer h1 text-size-50  text-m-size-40">100%</span>
+                                    <h2 class="titr-skill">Théraphie par ventouses</h2>
+
+                    <p class="h1 text-size-20 margin-top-10 text-dark text-thin">Combiné avec l'acupuncture pour traiter diverses douleurs articulaires.</p> 
+                    </div>
+                </div>
+                </div>
+                {# <div class="s-12 m-12 l-3 col-lg-3">
+                <div class="block">
+                    <div class="count-to text-center">
+                    <span class="timer h1 text-size-50  text-m-size-40">7 milion</span>
+                    <p class="h1 text-size-20 margin-top-10 text-dark text-thin">Nam liber tempor</p> 
+                    </div>
+                </div>
+                </div>  #}
+                </div>
+            </div>
+            </div>
+        </section>
+            {# <section class="section background-white" >
+        <h1 class="titr-skill text-center mt-5">
+                    J'aide à garder votre corps en bonne santé
+                    </h1>
+        <p class="para-traits mb-3 text-center">Notre objectif est de traiter les patients en utilisant d'anciennes
+        techniques traditionnelles d'acupuncture, de massage Tuina et d'herbes chinoises préparées
+        à partir d'ingrédients naturels.
+        </p> #}
+    
+        {# <div class="container">
+        <div class="row" id="skills-section">
+            <div class="col-lg-3 col-md-6">
+                    <h2 class="titr-skill text-center">Acupuncture</h2>
+                        <p class="descrip-skill text-center">Avec l'aide de l'acupuncture, nous équilibrons votre énergie,
+                        améliorons la circulation sanguine, afin que votre corps puisse se réparer.</p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h2 class="titr-skill text-center">Massage Thuina</h2>
+                    <p class="descrip-skill text-center">Détend les muscles et éloigne la douleur.</p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h2 class="titr-skill text-center">Théraphie par ventouses</h2>
+                    <p class="descrip-skill text-center">Combiné avec l'acupuncture pour traiter diverses douleurs articulaires.</p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h2 class="titr-skill text-center">Auriculothérapie</h2>
+                    <p class="descrip-skill text-center">Réduit la douleur, Améliore les fonctions des organes, le transit notamment,
+                    Réduit le stress et l'anxiété, les problèmes émotionnels,
+                    Améliore le sommeil,</p>
+            </div>
+        </div>
+    </div> #}
+    </section>
+</div>
+{% endblock %}

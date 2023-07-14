@@ -1,0 +1,74 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello TuinaController!{% endblock %}
+
+{% block body %}
+<div class="container-fluid">
+<img src="{{ asset('images/imagecmdcheader.jpg')}}"class ="img-fluid mx-auto d-block">
+<img src="{{ asset('images/acupuncture photos.jpg')}}"class ="imag-pag-traits img-fluid mx-auto d-block mt-5">
+<h2 class="titre-prin-pag">À quoi ressemble un soin Tuina (massage Tuina) ?</h2>
+
+<ul id="list-therap" class="list-one">
+<h3 class="titre-tab-therap">Thérapies utilisées</h3>
+<a href="{{ path(('app_acupunture')) }}"><li>Acupunture</li></a>
+<a href="{{ path(('app_tuina')) }}"><li>Massage Tuina</li></a>
+<a href="{{ path(('app_coude_tennis')) }}"><li>Coude de Tennis</li></a>
+<a href="{{ path(('app_depresion')) }}"><li>Dépresion</li></a>
+<a href="{{ path(('app_douleur_chronique')) }}"><li>Douleur Chronique</li></a>
+<a href="{{ path(('app_epaule_gelee')) }}"><li>Epaule Gelée</li></a>
+<a href="{{ path(('app_mal_de_tete')) }}"><li>Mal de Tete</li></a>
+{# <a href="{{ path(('app_massage_preventif')) }}"><li>Massage preventif</li></a> #}
+<a href="{{ path(('app_therapie_ventouses')) }}"><li>Théraphie par ventouses</li></a>
+{# <a href="{{ path(('app_tuina'))}}"><li></li></a> #}
+{# <a href="{{ path(('app_acupunture_surpoids'))}}"><li>Acunpunture contre le surpoids</li></a> #}
+</ul>
+<section>
+<p class="para-traits"> Le traitement est une combinaison de techniques de manipulation physique – 
+massage thérapeutique chinois et acupression – et de manipulation des points d'acupuncture.
+Le massage Tuina agit en profondeur dans les tissus musculaires, les os et les tendons,
+mais aussi dans le système nerveux. Il augmente votre résilience et votre résistance, vous donne de la 
+souplesse et fait disparaître les tensions et la fatigue.<br>
+{# <h3 class="titre-prin-traits">Mécanisme d'action Acupuncture pour le soulagement de la douleur</h3> #}
+</p>
+</section>
+<section>
+<h3 class="titre-prin-traits>Thérapie d'acupuncture pour les plaintes de douleur"></h3>
+<b class="subtitle-traits">A. Plaintes et blessures orthopédiques </b>
+<p class="para-traits">1. Spondylopathie cervicale, raideur de la nuque<br>
+
+2. Périarthrose de l'épaule, entorse de l'épaule,
+tendinite du sus-sponatus, tendinite du biceps brachial<br>
+<img src="{{ asset('images/pexels-rdne-stock-project-8313436.jpg')}}" style="height:auto; width:200px;" Align="right">
+
+3. Épocondylite humérale médiale et latérale (tennis elbow), lésion du coude<br>
+
+4. Entorse du poignet, ténosyniovite sténosante,
+entorse des articulations des doigts, kyste de l'articulation du poignet.<br>
+
+5. Chondrite costale, perturbation des vertèbres thoraciques et lombaires<br>
+
+6. Hernie discale, élongation aiguë et chronique des muscles lombaires, semi-luxation de l'articulation sacro-iliaque, spondylopathie rétrograde<br>
+
+7. Lésion de l'articulation de la hanche, lésion du muscle adducteur, lésion du nerf clunisien supérieur, lésion du muscle piriforme, sciatique<br>
+
+8. Entorse articulaire du genou, lésion des ligaments médial et latéral du genou, bursite traumatique, chondromalacie de la rotule<br>
+
+9. Entorse de la cheville, tendinite d'Achille, entorse de l'os du talon, arthrose de l'articulation de la cheville.<br>
+
+<b class="subtitle-traits">B. Troubles internes et gynécologiques</b><br>
+
+
+
+1. Syndrome de fatigue, grippe, maux de tête, maux de dents, paralysie faciale<br>
+
+2. Douleurs à l'estomac, douleurs dans la région lombaire, insomnie, dysménorrhée<br>
+
+3. Troubles digestifs, diarrhée, constipation, torticolis chez les enfants<br>
+
+4. Énurésie (pipi au lit) chez les enfants<br> </p>
+<b class="subtitle-traits"> Douleur et émotion </b>
+<p class="para-traits"> La tension mentale et l'agitation peuvent également causer de la douleur car cela conduit finalement à des tensions et à des blocages dans le corps. À mon avis, le déséquilibre mental est une cause majeure de nombreuses plaintes de douleur chronique inexplicables. </p>
+</section>
+
+</div>
+{% endblock %}

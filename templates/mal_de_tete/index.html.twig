@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello MalDeTeteController!{% endblock %}
+
+{% block body %}
+<div class="container-fluid">
+{# <div class="header-custom hc"> #}
+<img src="{{ asset('images/imagecmdcheader.jpg')}}"class ="img-fluid mx-auto d-block">
+<img src="{{ asset('images/40861-6-pain-in-the-neck-download-hq-png.png')}}"class ="imag-pag-traits img-fluid mx-auto d-block mt-5">
+<h2 class="titre-prin-pag">Qu'est ce que l'Acupunture ?</h2>
+
+<ul id="list-therap" class="list-one">
+<h3 class="titre-tab-therap">Thérapies utilisées</h3>
+<a href="{{ path(('app_acupunture')) }}"><li>Acupunture</li></a>
+<a href="{{ path(('app_tuina')) }}"><li>Massage Tuina</li></a>
+<a href="{{ path(('app_coude_tennis')) }}"><li>Coude de Tennis</li></a>
+<a href="{{ path(('app_depresion')) }}"><li>Dépresion</li></a>
+<a href="{{ path(('app_douleur_chronique')) }}"><li>Douleur Chronique</li></a>
+<a href="{{ path(('app_epaule_gelee')) }}"><li>Epaule Gelée</li></a>
+<a href="{{ path(('app_mal_de_tete')) }}"><li>Mal de Tete</li></a>
+{# <a href="{{ path(('app_massage_preventif')) }}"><li>Massage preventif</li></a> #}
+<a href="{{ path(('app_therapie_ventouses')) }}"><li>Théraphie par ventouses</li></a>
+{# <a href="{{ path(('app_tuina'))}}"><li></li></a> #}
+{# <a href="{{ path(('app_acupunture_surpoids'))}}"><li>Acunpunture contre le surpoids</li></a> #}
+</ul>
+<section>
+<h3 class="titre-prin-traits">Mécanisme d'action Acupuncture pour le soulagement de la douleur</h3>
+<p class="para-traits"> L’acupuncture peut aider à gérer la douleur chronique en :
+
+Stimulation des nerfs dans les muscles et autres tissus, entraînant la libération d'endorphines et d'autres neurotransmetteurs tels que la sérotonine, et des changements dans la partie du cerveau qui traite la douleur.
+Soulagement de la douleur grâce aux mécanismes des récepteurs alpha-adrénergiques (Koo 2008).
+Augmenter la libération d'adénosine, qui a des propriétés analgésiques (Goldman 2010).
+Régulation du système limbique (Hui 2009)
+Réduire l'inflammation par la libération de substances immunorégulatrices (Kavoussi 2007, Zijlstra 2003).
+Améliorer la rigidité et la mobilité en améliorant la microcirculation locale (Komori 2009), ce qui aide à résoudre l'enflure .</p>
+</p>
+</section>
+<section>
+<h3 class="titre-prin-traits>Thérapie d'acupuncture pour les plaintes de douleur"</h3>
+<b class="subtitle-traits">Types de douleur</b>
+<p class="para-traits"> Les plaintes de douleur sont de toutes formes et tailles. La douleur peut être lancinante et aiguë, mais aussi lancinante et sourde. La douleur peut être légère à un moment et spontanément très présente le suivant. La douleur peut se manifester à un endroit, mais elle peut aussi sauter. Selon la médecine chinoise, la douleur est liée à l'incapacité de l'énergie, du sang et des fluides à circuler librement dans les méridiens. Ainsi, lorsque le flux est bloqué par une tension, une blessure ou un autre traumatisme, la douleur s'ensuit. </p>
+<b class="subtitle-traits"> Douleur et émotion </b>
+<p class="para-traits"> La tension mentale et l'agitation peuvent également causer de la douleur car cela conduit finalement à des tensions et à des blocages dans le corps. À mon avis, le déséquilibre mental est une cause majeure de nombreuses plaintes de douleur chronique inexplicables. </p>
+</section>
+
+</div>
+{% endblock %}
